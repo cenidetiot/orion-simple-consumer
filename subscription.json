@@ -16,7 +16,7 @@
       "attrs": [],
       "attrsFormat": "keyValues",
       "http": {
-        "url": "http://0.0.0.0:3000/notify"
+        "url": "https://orion-simple-consumer.herokuapp.com/notify"
       }
     }
 }

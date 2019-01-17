@@ -11,10 +11,11 @@ router.get('/entities', function(req, res, next) {
   console.log(req.query)
   let query = ngsi.createQuery({
     "id":"Room.*",
-    "type":"Room",
+    "type":"Fiware",
     "options":"keyValues",
    "temperature" : req.query.temperature
   })
+  console.log(query)
   ocb.getWithQuery(query)
   .then((result) => {
     res.render('index', { entities: result.body });
