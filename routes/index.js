@@ -3,7 +3,7 @@ var router = express.Router();
 var ocb = require("ocb-sender");
 var ngsi = require("ngsi-parser");
 
-ocb.config('http://0.0.0.0:1026/v2')
+ocb.config('http://35.185.120.11:1026/v2')
 .then((result) => console.log(result))
 .catch((err) => console.log(err));
 
