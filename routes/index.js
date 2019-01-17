@@ -13,7 +13,7 @@ router.get('/entities', function(req, res, next) {
     "id":"Room.*",
     "type":"Fiware",
     "options":"keyValues",
-   "temperature" : req.query.temperature
+//   "temperature" : req.query.temperature
   })
   console.log(query)
   ocb.getWithQuery(query)
