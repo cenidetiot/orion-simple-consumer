@@ -11,7 +11,7 @@ router.get('/entities', function(req, res, next) {
   console.log(req.query)
   let query = ngsi.createQuery({
     "id":".*",
-    "type":"Fiware",
+    "type":"fiware",
     "options":"keyValues",
 //   "temperature" : req.query.temperature
   })
