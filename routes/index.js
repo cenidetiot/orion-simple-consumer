@@ -10,7 +10,7 @@ ocb.config('http://35.185.120.11:1026/v2')
 router.get('/entities', function(req, res, next) {
   console.log(req.query)
   let query = ngsi.createQuery({
-    "id":"Room.*",
+    "id":".*",
     "type":"Fiware",
     "options":"keyValues",
 //   "temperature" : req.query.temperature
