@@ -1,0 +1,22 @@
+{
+    "description": "Subscriptions to your own entity",
+    "expires": "2040-01-01T14:00:00.00Z",
+    "subject": {
+      "entities": [
+        {
+          "idPattern": ".*",
+          "type": "Room"
+        }
+      ],
+      "condition": {
+        "attrs": []
+      }
+    },
+    "notification": {
+      "attrs": [],
+      "attrsFormat": "keyValues",
+      "http": {
+        "url": "http://0.0.0.0:3000/notify"
+      }
+    }
+}
